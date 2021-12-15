@@ -1,0 +1,246 @@
+/********************* Hoja de estilo *****************/
+
+body {margin: 0;
+      padding: 0;
+      background-color: rgb(0, 0, 0);}
+
+@font-face {
+  font-family: "Titulos";
+  src: url("../fonts/LazenbyCompLiquid.ttf");
+}
+
+@font-face {
+  font-family: "texto";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+#container {background-color: rgb(0, 0, 0);
+            width: 100%;}
+
+/********************* Barra de Navegación ************/
+
+nav {position:sticky;
+  top:0;
+  z-index:99;}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(93, 81, 78);
+  font-family: "Titulos";
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #28dafa;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.topnav a:hover {
+  background-color: rgb(231, 162, 0);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffb300;
+  color: rgb(0, 0, 0);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/********************* Hero Section *******************/
+
+#hero {background-image: url("../images/hero.jpg");
+  background-size:cover; 
+  background-position:66%;
+  height:95vh; 
+  position:relative;
+  border-bottom: 2px solid #ffb300;}
+
+#calltoaction {position:absolute;
+    color: #28dafa;
+    bottom:40px;
+    left:40px;
+    padding:15px;
+    text-align: justify;
+    background-color: black;
+    border-radius: 15px;
+    font-family: "Titulos";
+    font-size: 2em;
+    text-transform: uppercase;
+    box-shadow: 5px -5px 5px#ffb300;
+     }
+
+/**************************** Estilo de la Introduccion *********************/
+
+#introduction {font-family:texto;
+  color: #28dafa;
+  padding:5%;
+  text-align:justify;
+  padding-bottom: 5%;
+  width: 75%;
+  margin: auto;
+  font-size: 1.3em;
+  background-color: rgb(0, 0, 0);
+  
+ }
+
+
+#introduction h1 {background-color: black;
+  margin: auto;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: "Titulos";
+  font-size: 2em;
+  text-transform: uppercase;
+  box-shadow:  -5px 8px 5px#ffb300;
+  text-align:center;
+  font-size:2em;
+  width: 75%;
+  margin-bottom: 40px;
+  }
+
+#procesador {width:45%;
+    float:right;
+    margin:20px;
+  }
+
+#introduction p:first-letter {font-size: 2em;
+                            color: #ffb300;}
+
+#barra {border-bottom: 2px solid #ffb300;
+                            }
+
+/************************ Estilo de la Galeria *********************/
+
+
+#prototypes {font-family:texto;
+  color: #28dafa;
+  padding:5%;
+  text-align:justify;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 75%;
+  margin: auto;
+  font-size: 1.3em;
+  background-color: rgb(0, 0, 0);
+ }
+
+#prototypes h1 {background-color: black;
+  margin: auto;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: "Titulos";
+  font-size: 2em;
+  text-transform: uppercase;
+  box-shadow:  -5px 8px 5px#ffb300;
+  text-align:center;
+  font-size:2em;
+  width: 75%;
+  margin-bottom: 40px;
+  }
+
+  #prototypes p:first-letter {font-size: 2em;
+    color: #ffb300;}
+
+.resetear {clear:both;}
+
+
+.tercio {width:29%;
+  margin:2%;
+  padding:2%;
+  float:left;
+  box-sizing:border-box;
+  border:1px solid #000000;
+  box-shadow: 5px  5px 5px #ffb300,
+             -5px -5px 5px #ffb300,
+             -5px  5px 5px #ffb300,
+              5px -5px 5px #ffb300;}
+
+.tercio img {width:100%;
+             padding-bottom: 3%;}
+
+
+.tercio h2 {font-family: "Titulos";
+     color:#28dafa;
+     text-align:center;
+     padding-bottom: 10%;}
+
+.tercio p {padding-top: 0%;
+           width: 30%;
+           color: black;
+           border: 1px solid #f8f8f8;
+           background-color: #28dafa;
+           font-size: 0.6em;
+           margin: auto;
+           text-align: center;
+           padding: 3%;
+           font-weight: bold;}
+
+#prototypes .tercio p:first-letter {font-size: 1em;
+                                    color: black;}
+
+/********************* Estilo del Footer *******************/
+
+#footer {background-color: black;
+  margin: auto;
+  padding: 0;
+  border: 1px solid black;
+  font-family: "texto";
+  box-shadow: 5px  5px 5px #ffb300,
+             -5px -5px 5px #ffb300,
+             -5px  5px 5px #ffb300,
+              5px -5px 5px #ffb300;;
+  text-align:center;
+  font-size:1em;
+  width: 75%;
+  margin-bottom: 40px;
+  color: #28dafa;
+  }
+
+/********************* Medias Queries **********************/
+
+@media only screen and (max-width:800px){
+  #procesador {width:100%;
+               margin: auto;}
+
+  .tercio {width:46%;
+           margin:2%}
+  
+  #tercera{width:46%;
+           margin:auto;
+           margin-top: 2%;
+           margin-left: 26%;}
+}
+
+@media only screen and (max-width:500px){
+.tercio {width:90%;
+         margin:5%;}
+}
